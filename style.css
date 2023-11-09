@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#inner {
+  width: 80%;
+  height: 80%;
+  background-color: rgb(197, 233, 197);
+  border-radius: 8px;
+  overflow: hidden;
+}
+#gtop {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(129, 208, 129);
+  color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+.elm {
+  display: flex;
+  gap: 10px;
+}
+.box {
+  color: rgb(124, 204, 124);
+  background-color: #fff;
+
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+#gbtm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  height: calc(100% - 60px);
+  padding: 5px 5px;
+  gap: 4px;
+  overflow-y: scroll;
+}
+.ball {
+  background-color: rgb(86, 166, 86);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  height: 25px;
+  width: 25px;
+  font-size: 12px;
+}
+.ball:hover {
+  background-color: rgb(48, 116, 48);
+}
+.f_result {
+  text-align: center;
+}
+
+h2 {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  #gtop {
+    padding: 0 30%;
+    height: 100px;
+  }
+  .box {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  #gbtm {
+    height: calc(100% - 100px);
+    padding: 10px 20px;
+    gap: 8px;
+    overflow-y: hidden;
+  }
+  .ball {
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+  }
+}
